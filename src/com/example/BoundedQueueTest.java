@@ -30,7 +30,7 @@ class BoundedQueueTest {
         var expected = Integer.toString(values[0]);
         var actual = q.deQueue().toString();
         assertTrue(expected.equals(actual));
-        assertFalse(q.isEmpty());
+        assertTrue(q.isEmpty());
     }
 
     @Test
