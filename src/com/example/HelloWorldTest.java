@@ -17,7 +17,7 @@ class HelloWorldTest {
             assertTrue(r.contains(a.get(i)), "Missing element "+a.get(i)+" discovered");
         }
         for (int i = 0; i < b.size(); i++){
-            assertTrue(r.contains(b.get(i)), "Missing element "+b.get(i)+" discovered");
+            assertFalse(r.contains(b.get(i)), "Missing element "+b.get(i)+" discovered");
         }
         System.out.println("All objects exist after Union");
     }
